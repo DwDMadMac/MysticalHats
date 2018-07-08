@@ -24,7 +24,7 @@ public class MysticalItemsMod {
 
     public static final String modId = "mysticalitems";
     public static final String name = "Mystical Hats";
-    public static final String version = "0.0.1";
+    public static final String version = "0.0.2";
 
     @Mod.Instance(modId)
     public static MysticalItemsMod instance;
