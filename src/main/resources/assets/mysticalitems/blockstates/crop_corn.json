@@ -1,0 +1,53 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cross"
+  },
+  "variants": {
+    "Inventory": {
+      "model": "mysticalitems:blocks/corn/7"
+    },
+    "age": {
+      "0": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/0"
+        }
+      },
+      "1": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/1"
+        }
+      },
+      "2": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/2"
+        }
+      },
+      "3": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/3"
+        }
+      },
+      "4": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/4"
+        }
+      },
+      "5": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/5"
+        }
+      },
+      "6": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/6"
+        }
+      },
+      "7": {
+        "textures": {
+          "cross": "mysticalitems:blocks/corn/7"
+        }
+      }
+    }
+  }
+}

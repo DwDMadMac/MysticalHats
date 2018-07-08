@@ -1,0 +1,18 @@
+##
+# Lang files are written in a simple "key+value" format.
+# For Blocks the key is tile.UNLOCALIZED.name.
+# For Items the key is item.UNLOCALIZED.name.
+# Where UNLOCALIZED is what is passed into setUnlocalizedName.
+##
+
+## Items
+item.ingot_copper.name=Copper Ingot
+item.corn.name=corn
+item.corn_seed.name=Corn Seed
+
+## Blocks
+tile.ore_copper.name=Copper ore
+tile.pedestal.name=Pedestal
+
+## Misc
+itemGroup.mysticalitems=Mystical Hats

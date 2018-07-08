@@ -1,0 +1,12 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "normal": {
+            "model": "mysticalitems:pedestal"
+        },
+        "inventory": {
+            "model": "mysticalitems:pedestal",
+            "transform": "forge:default-block"
+        }
+    }
+}

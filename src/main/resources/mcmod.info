@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mysticalitems",
+  "name": "Mystical Items",
+  "description": "Testing the waters.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DwDMadMac"],
+  "credits": "Just a Dev Phase",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
