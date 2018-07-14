@@ -18,6 +18,7 @@ public class BlockPedestal extends BlockBase {
      * @return the state of the given block
      */
     @Override
+    @Deprecated
     public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
@@ -31,6 +32,7 @@ public class BlockPedestal extends BlockBase {
      * @return the state of the given block
      */
     @Override
+    @Deprecated
     public boolean isFullCube(IBlockState state) {
         return false;
     }
