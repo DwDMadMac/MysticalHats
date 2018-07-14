@@ -4,9 +4,6 @@
     "model": "cross"
   },
   "variants": {
-    "Inventory": {
-      "model": "mysticalitems:blocks/corn/7"
-    },
     "age": {
       "0": {
         "textures": {
