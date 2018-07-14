@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"pedestal": "block/stonebrick",
-		"particle": "block/stonebrick"
+		"pedestal": "blocks/stonebrick",
+		"particle": "blocks/stonebrick"
 	},
 	"elements": [
 		{
