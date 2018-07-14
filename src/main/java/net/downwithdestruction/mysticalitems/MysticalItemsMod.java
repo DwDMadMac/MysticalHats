@@ -23,7 +23,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class MysticalItemsMod {
 
     public static final String modId = "mysticalitems";
-    public static final String name = "Mystical Hats";
+    public static final String name = "Mystical Items";
     public static final String version = "0.0.2";
 
     @Mod.Instance(modId)
