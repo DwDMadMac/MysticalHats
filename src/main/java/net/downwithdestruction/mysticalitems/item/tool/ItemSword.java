@@ -1,7 +1,6 @@
 package net.downwithdestruction.mysticalitems.item.tool;
 
 import net.downwithdestruction.mysticalitems.MysticalItemsMod;
-import net.minecraft.item.Item;
 
 public class ItemSword extends net.minecraft.item.ItemSword {
 
@@ -22,10 +21,8 @@ public class ItemSword extends net.minecraft.item.ItemSword {
 
     /**
      * Register 'name' to our item model
-     *
-     * @param item Registers to our NAME model
      */
-    public void registerItemModel(Item item) {
+    public void registerItemModel() {
         MysticalItemsMod.proxy.registerItemRenderer(this, 0, name);
     }
 }

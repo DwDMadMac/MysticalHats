@@ -33,10 +33,10 @@ public class MysticalItemsMod {
     public static CommonProxy proxy;
 
     public static final MysticalHatsTab creativeTab = new MysticalHatsTab();
-    public static final Item.ToolMaterial cooperToolMaterial = EnumHelper.addToolMaterial("COPPER", 2, 500, 6, 2, 14);
+    public static final Item.ToolMaterial copperToolMaterial = EnumHelper.addToolMaterial("COPPER", 2, 500, 6, 2, 14);
 
     @Mod.EventHandler
-    public void preRun(FMLPreInitializationEvent e) {
+    public void preRun(FMLPreInitializationEvent event) {
         System.out.println(name + " is now starting!");
     }
 
@@ -50,7 +50,7 @@ public class MysticalItemsMod {
      * The event bus is Forge’s system for allowing mods to register (or subscribe) handler methods to be run when specific events happen.
      * <p>
      * Registry Events:
-     * Registries are Forge’s method of keeping track of all the objects of various types in the game,
+     * Registries are Forge’s method of keeping track of all the objects of various types in the game,-
      * both vanilla Minecraft and modded ones.
      */
     @Mod.EventBusSubscriber
@@ -78,12 +78,12 @@ public class MysticalItemsMod {
     }
 
     @Mod.EventHandler
-    public void run(FMLInitializationEvent e) {
+    public void run(FMLInitializationEvent event) {
         System.out.println(name + " is now running.");
     }
 
     @Mod.EventHandler
-    public void postRun(FMLPostInitializationEvent e) {
+    public void postRun(FMLPostInitializationEvent event) {
         System.out.println(name + " is shutting down!");
     }
 }

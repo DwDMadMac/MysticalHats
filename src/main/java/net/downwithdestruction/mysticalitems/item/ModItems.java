@@ -1,5 +1,7 @@
 package net.downwithdestruction.mysticalitems.item;
 
+import net.downwithdestruction.mysticalitems.MysticalItemsMod;
+import net.downwithdestruction.mysticalitems.item.tool.ItemSword;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -14,6 +16,7 @@ public class ModItems {
     public static ItemOre ingotCopper = new ItemOre("ingot_copper", "ingotCopper");
     public static ItemCorn corn = new ItemCorn();
     public static ItemCornSeed cornSeed = new ItemCornSeed();
+    public static ItemSword copperSword = new ItemSword(MysticalItemsMod.copperToolMaterial, "copper_sword");
 
     /**
      * Registers items with the GameRegistry
@@ -24,7 +27,8 @@ public class ModItems {
         registry.registerAll(
                 ingotCopper,
                 corn,
-                cornSeed
+                cornSeed,
+                copperSword
         );
     }
 
@@ -35,5 +39,6 @@ public class ModItems {
         ingotCopper.registerItemModel();
         corn.registerItemModel();
         cornSeed.registerItemModel();
+        copperSword.registerItemModel();
     }
 }
