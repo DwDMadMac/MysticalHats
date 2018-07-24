@@ -3,6 +3,7 @@ package net.downwithdestruction.mysticalitems.item;
 import net.downwithdestruction.mysticalitems.MysticalItemsMod;
 import net.downwithdestruction.mysticalitems.item.tool.ItemAxe;
 import net.downwithdestruction.mysticalitems.item.tool.ItemPickaxe;
+import net.downwithdestruction.mysticalitems.item.tool.ItemShovel;
 import net.downwithdestruction.mysticalitems.item.tool.ItemSword;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -22,6 +23,7 @@ public class ModItems {
     public static ItemSword copperSword = new ItemSword(MysticalItemsMod.copperToolMaterial, "copper_sword");
     public static ItemPickaxe copperPickaxe = new ItemPickaxe(MysticalItemsMod.copperToolMaterial, "copper_pickaxe");
     public static ItemAxe copperAxe = new ItemAxe(MysticalItemsMod.copperToolMaterial, "copper_axe");
+    public static ItemShovel copperShovel = new ItemShovel(MysticalItemsMod.copperToolMaterial, "copper_shovel");
 
     /**
      * Registers items with the GameRegistry
@@ -35,7 +37,8 @@ public class ModItems {
                 cornSeed,
                 copperSword,
                 copperPickaxe,
-                copperAxe
+                copperAxe,
+                copperShovel
         );
     }
 
@@ -49,5 +52,6 @@ public class ModItems {
         copperSword.registerItemModel();
         copperPickaxe.registerItemModel();
         copperAxe.registryItemModel();
+        copperShovel.registryItemModel();
     }
 }
