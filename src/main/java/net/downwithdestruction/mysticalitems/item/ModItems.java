@@ -2,6 +2,7 @@ package net.downwithdestruction.mysticalitems.item;
 
 import net.downwithdestruction.mysticalitems.MysticalItemsMod;
 import net.downwithdestruction.mysticalitems.item.tool.ItemAxe;
+import net.downwithdestruction.mysticalitems.item.tool.ItemHoe;
 import net.downwithdestruction.mysticalitems.item.tool.ItemPickaxe;
 import net.downwithdestruction.mysticalitems.item.tool.ItemShovel;
 import net.downwithdestruction.mysticalitems.item.tool.ItemSword;
@@ -24,6 +25,7 @@ public class ModItems {
     public static ItemPickaxe copperPickaxe = new ItemPickaxe(MysticalItemsMod.copperToolMaterial, "copper_pickaxe");
     public static ItemAxe copperAxe = new ItemAxe(MysticalItemsMod.copperToolMaterial, "copper_axe");
     public static ItemShovel copperShovel = new ItemShovel(MysticalItemsMod.copperToolMaterial, "copper_shovel");
+    public static ItemHoe copperHoe = new ItemHoe(MysticalItemsMod.copperToolMaterial, "copper_hoe");
 
     /**
      * Registers items with the GameRegistry
@@ -38,7 +40,8 @@ public class ModItems {
                 copperSword,
                 copperPickaxe,
                 copperAxe,
-                copperShovel
+                copperShovel,
+                copperHoe
         );
     }
 
@@ -53,5 +56,6 @@ public class ModItems {
         copperPickaxe.registerItemModel();
         copperAxe.registryItemModel();
         copperShovel.registryItemModel();
+        copperHoe.registryItemModel();
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "items/handheld",
+  "textures": {
+    "layer0": "mysticalitems:items/copper_hoe"
+  }
+}
