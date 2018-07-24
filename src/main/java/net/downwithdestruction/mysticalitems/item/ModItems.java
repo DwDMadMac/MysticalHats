@@ -1,6 +1,7 @@
 package net.downwithdestruction.mysticalitems.item;
 
 import net.downwithdestruction.mysticalitems.MysticalItemsMod;
+import net.downwithdestruction.mysticalitems.item.tool.ItemAxe;
 import net.downwithdestruction.mysticalitems.item.tool.ItemPickaxe;
 import net.downwithdestruction.mysticalitems.item.tool.ItemSword;
 import net.minecraft.item.Item;
@@ -17,8 +18,10 @@ public class ModItems {
     public static ItemOre ingotCopper = new ItemOre("ingot_copper", "ingotCopper");
     public static ItemCorn corn = new ItemCorn();
     public static ItemCornSeed cornSeed = new ItemCornSeed();
+    // Tools
     public static ItemSword copperSword = new ItemSword(MysticalItemsMod.copperToolMaterial, "copper_sword");
     public static ItemPickaxe copperPickaxe = new ItemPickaxe(MysticalItemsMod.copperToolMaterial, "copper_pickaxe");
+    public static ItemAxe copperAxe = new ItemAxe(MysticalItemsMod.copperToolMaterial, "copper_axe");
 
     /**
      * Registers items with the GameRegistry
@@ -31,7 +34,8 @@ public class ModItems {
                 corn,
                 cornSeed,
                 copperSword,
-                copperPickaxe
+                copperPickaxe,
+                copperAxe
         );
     }
 
@@ -44,5 +48,6 @@ public class ModItems {
         cornSeed.registerItemModel();
         copperSword.registerItemModel();
         copperPickaxe.registerItemModel();
+        copperAxe.registryItemModel();
     }
 }
