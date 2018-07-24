@@ -17,6 +17,7 @@ public class ItemSword extends net.minecraft.item.ItemSword {
         setUnlocalizedName(name);
         setRegistryName(name);
         this.name = name;
+        setCreativeTab(MysticalItemsMod.creativeTab);
     }
 
     /**

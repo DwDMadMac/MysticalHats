@@ -17,6 +17,7 @@ public class ItemAxe extends net.minecraft.item.ItemAxe {
         setUnlocalizedName(name);
         setRegistryName(name);
         this.name = name;
+        setCreativeTab(MysticalItemsMod.creativeTab);
     }
 
     /**

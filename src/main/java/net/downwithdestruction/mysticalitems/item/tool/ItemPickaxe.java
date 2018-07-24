@@ -11,6 +11,7 @@ public class ItemPickaxe extends net.minecraft.item.ItemPickaxe {
         setUnlocalizedName(name);
         setRegistryName(name);
         this.name = name;
+        setCreativeTab(MysticalItemsMod.creativeTab);
     }
 
     public void registerItemModel(){

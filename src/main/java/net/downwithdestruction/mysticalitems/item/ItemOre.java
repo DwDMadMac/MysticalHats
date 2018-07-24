@@ -8,7 +8,6 @@ public class ItemOre extends ItemBase {
 
     public ItemOre(String name, String oreName) {
         super(name);
-
         this.oreName = oreName;
     }
 
