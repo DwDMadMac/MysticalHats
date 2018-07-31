@@ -1,7 +1,6 @@
 package net.downwithdestruction.mysticalitems.item;
 
 import net.downwithdestruction.mysticalitems.MysticalItemsMod;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 /**
@@ -29,18 +28,5 @@ public class ItemBase extends Item {
 
     public void registerItemModel() {
         MysticalItemsMod.proxy.registerItemRenderer(this, 0, name);
-    }
-
-    /**
-     * setCreativeTab method is an overridden version that returns ItemBase
-     * instead of Item so we can use it in our register method without casting.
-     *
-     * @param tab Prepare to set a custom creative tab
-     * @return ItemBase instead of item
-     */
-    @Override
-    public ItemBase setCreativeTab(CreativeTabs tab) {
-        super.setCreativeTab(tab);
-        return this;
     }
 }

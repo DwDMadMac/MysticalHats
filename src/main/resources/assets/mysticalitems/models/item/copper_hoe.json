@@ -1,5 +1,5 @@
 {
-  "parent": "items/handheld",
+  "parent": "item/handheld",
   "textures": {
     "layer0": "mysticalitems:items/copper_hoe"
   }

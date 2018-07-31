@@ -6,6 +6,7 @@ import net.downwithdestruction.mysticalitems.item.tool.ItemHoe;
 import net.downwithdestruction.mysticalitems.item.tool.ItemPickaxe;
 import net.downwithdestruction.mysticalitems.item.tool.ItemShovel;
 import net.downwithdestruction.mysticalitems.item.tool.ItemSword;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -26,6 +27,11 @@ public class ModItems {
     public static ItemAxe copperAxe = new ItemAxe(MysticalItemsMod.copperToolMaterial, "copper_axe");
     public static ItemShovel copperShovel = new ItemShovel(MysticalItemsMod.copperToolMaterial, "copper_shovel");
     public static ItemHoe copperHoe = new ItemHoe(MysticalItemsMod.copperToolMaterial, "copper_hoe");
+    // Armor
+    public static ItemArmor copperHelmet = new ItemArmor(MysticalItemsMod.copperArmorMaterial, EntityEquipmentSlot.HEAD, "copper_helmet");
+    public static ItemArmor copperChestplate = new ItemArmor(MysticalItemsMod.copperArmorMaterial, EntityEquipmentSlot.CHEST, "copper_chestplate");
+    public static ItemArmor copperLeggings = new ItemArmor(MysticalItemsMod.copperArmorMaterial, EntityEquipmentSlot.LEGS, "copper_leggings");
+    public static ItemArmor copperBoots = new ItemArmor(MysticalItemsMod.copperArmorMaterial, EntityEquipmentSlot.FEET, "copper_boots");
 
     /**
      * Registers items with the GameRegistry
@@ -41,7 +47,11 @@ public class ModItems {
                 copperPickaxe,
                 copperAxe,
                 copperShovel,
-                copperHoe
+                copperHoe,
+                copperHelmet,
+                copperChestplate,
+                copperLeggings,
+                copperBoots
         );
     }
 
@@ -57,5 +67,9 @@ public class ModItems {
         copperAxe.registryItemModel();
         copperShovel.registryItemModel();
         copperHoe.registryItemModel();
+        copperHelmet.registryItemModel();
+        copperChestplate.registryItemModel();
+        copperLeggings.registryItemModel();
+        copperBoots.registryItemModel();
     }
 }

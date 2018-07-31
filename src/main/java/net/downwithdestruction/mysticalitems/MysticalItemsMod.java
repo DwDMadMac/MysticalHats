@@ -5,7 +5,9 @@ import net.downwithdestruction.mysticalitems.client.MysticalHatsTab;
 import net.downwithdestruction.mysticalitems.item.ModItems;
 import net.downwithdestruction.mysticalitems.proxy.CommonProxy;
 import net.minecraft.block.Block;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
@@ -33,7 +35,10 @@ public class MysticalItemsMod {
     public static CommonProxy proxy;
 
     public static final MysticalHatsTab creativeTab = new MysticalHatsTab();
+    // Tool Material
     public static final Item.ToolMaterial copperToolMaterial = EnumHelper.addToolMaterial("COPPER", 2, 500, 6, 2, 14);
+    // Armor Material
+    public static final ItemArmor.ArmorMaterial copperArmorMaterial = EnumHelper.addArmorMaterial("COPPER", modId + ":copper",15,new int[]{2,5,6,2},9,SoundEvents.ITEM_ARMOR_EQUIP_IRON,0.0F);
 
     @Mod.EventHandler
     public void preRun(FMLPreInitializationEvent event) {
@@ -42,13 +47,13 @@ public class MysticalItemsMod {
 
     /**
      * Static inner class
-     * <p>
+     *
      * Handles the registration.
-     * <p>
+     *
      * Mod.EventBusSubscriber annotation signals Forge that it needs to be subscribed to the main event bus
-     * <p>
+     *
      * The event bus is Forge’s system for allowing mods to register (or subscribe) handler methods to be run when specific events happen.
-     * <p>
+     *
      * Registry Events:
      * Registries are Forge’s method of keeping track of all the objects of various types in the game,-
      * both vanilla Minecraft and modded ones.
