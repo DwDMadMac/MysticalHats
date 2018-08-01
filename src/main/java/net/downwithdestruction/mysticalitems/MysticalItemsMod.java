@@ -4,6 +4,7 @@ import net.downwithdestruction.mysticalitems.block.ModBlocks;
 import net.downwithdestruction.mysticalitems.client.MysticalHatsTab;
 import net.downwithdestruction.mysticalitems.item.ModItems;
 import net.downwithdestruction.mysticalitems.proxy.CommonProxy;
+import net.downwithdestruction.mysticalitems.world.ModWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
@@ -17,6 +18,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  * Created by madmac on 7/1/2018.
@@ -43,6 +45,7 @@ public class MysticalItemsMod {
     @Mod.EventHandler
     public void preRun(FMLPreInitializationEvent event) {
         System.out.println(name + " is now starting!");
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 3); // Register world generator
     }
 
     /**
